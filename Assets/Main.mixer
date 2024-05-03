@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!243 &-7401505354747152132
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Music
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 04492db3d6f1bb04c91fd41a694257e7
+  m_Children: []
+  m_Volume: 5b08dfe270d76f744bd674e6e5dc50ca
+  m_Pitch: 6544b09a05a8e0045952f59b3f44b0c4
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -6550546157544309544}
+  m_UserColorIndex: 1
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &-6550546157544309544
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 3429464de808bf1448563156d4bebb65
+  m_EffectName: Attenuation
+  m_MixLevel: d77fec2c5ae52d14e9f03326fbfa8176
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &-1683814712916995328
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 661c0609174957a4195bf15e16645985
+  m_EffectName: Attenuation
+  m_MixLevel: 9be7c47b98682e9478044bbd821e0f42
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Main
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters:
+  - guid: 9e57551af16c4ed4ab7fe05c84e1b667
+    name: CombatMusicVolume
+  - guid: 901b35423d309f94a9d00e62cae19092
+    name: MasterVolume
+  - guid: 5b08dfe270d76f744bd674e6e5dc50ca
+    name: MusicVolume
+  m_AudioMixerGroupViews:
+  - guids:
+    - 0cf6b7ba702a7a040865add9fe541940
+    - 04492db3d6f1bb04c91fd41a694257e7
+    - 2e13358b30d8dd24a8e04c259dbd65ce
+    name: View
+  - guids:
+    - 0cf6b7ba702a7a040865add9fe541940
+    - 04492db3d6f1bb04c91fd41a694257e7
+    name: Music
+  - guids:
+    - 0cf6b7ba702a7a040865add9fe541940
+    - 2e13358b30d8dd24a8e04c259dbd65ce
+    name: Combat Music
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 0cf6b7ba702a7a040865add9fe541940
+  m_Children:
+  - {fileID: -7401505354747152132}
+  - {fileID: 3992168015150237571}
+  m_Volume: 901b35423d309f94a9d00e62cae19092
+  m_Pitch: b23855a384a210140a6438844b98f752
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 24400004}
+  m_UserColorIndex: 8
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 48d1eb7153b999a47b14d0fa26781170
+  m_EffectName: Attenuation
+  m_MixLevel: bce4bb281b44bfe48975bcc12628cd53
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: a1c1c373ef7e17f41bcc7db2edc33903
+  m_FloatValues:
+    9e57551af16c4ed4ab7fe05c84e1b667: -8.841784
+  m_TransitionOverrides: {}
+--- !u!243 &3992168015150237571
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Combat Music
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 2e13358b30d8dd24a8e04c259dbd65ce
+  m_Children: []
+  m_Volume: 9e57551af16c4ed4ab7fe05c84e1b667
+  m_Pitch: ce8ab31dfa514cb41a6cd941fb7740bb
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -1683814712916995328}
+  m_UserColorIndex: 3
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
